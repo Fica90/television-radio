@@ -1,21 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package main;
 
-/**
- *
- * @author qa-prepodne
- */
+import media.Radio;
+import media.Television;
+
+
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
-        // TODO code application logic here
+     
+        Television myTelevision = new Television ();
+        myTelevision.showData();
+        
+        myTelevision.setcurrentProgram(1);
+        myTelevision.setVolume(8);
+        myTelevision.showData();
+        
+        Radio myRadio = new Radio (98.6, 550, 'A');
+        myRadio.showData();
+        
     }
     
 }
